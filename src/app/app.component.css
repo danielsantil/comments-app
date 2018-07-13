@@ -1,0 +1,11 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

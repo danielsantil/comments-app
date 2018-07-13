@@ -1,0 +1,19 @@
+<h2>Creación de comentarios</h2>
+<div>
+  <div>Nombre:</div>
+  <input type="text" [(ngModel)]="name"/>
+
+  <div>Correo electrónico:</div>
+  <input type="email" [(ngModel)]="email" />
+
+  <div>Página web:</div>
+  <input type="text" [(ngModel)]="website" />
+
+  <div>Comentario:</div>
+  <textarea cols="25" rows="5" [(ngModel)]="content"></textarea>
+
+  <div>
+    <button type="button" (click)="save()">Guardar</button>
+    <button type="button" (click)="goBack()">Regresar</button>
+  </div>
+</div>

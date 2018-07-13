@@ -1,0 +1,23 @@
+<h2>Listado de comentarios</h2>
+<button id="add-comment-btn" type="button" routerLink="/create">Agregar comentario</button>
+<input type="text" placeholder="Buscar" #text (keyup)="search(text)" />
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let comment of filteredComments">
+      <td>{{comment.name}}</td>
+      <td>{{comment.email}}</td>
+      <td>{{comment.website}}</td>
+      <td>
+        <button routerLink="/edit/{{comment.id}}">Editar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
